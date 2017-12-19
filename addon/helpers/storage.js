@@ -61,6 +61,11 @@ function tryStorage(name) {
 }
 
 function getStorage(name) {
+  // Attempt to fall back to localStorage if the provided
+  // type is not supported, ignoring custom drivers
+  if (!localforage.supports(drivers[name]) && !customDrivers[name]) {
+    name = 'local';
+  }
   if (storage[name]) {
     return storage[name];
   } else {
