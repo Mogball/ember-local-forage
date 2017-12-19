@@ -1,5 +1,5 @@
 {
-  "name": "ember-local-storage",
+  "name": "ember-localforage",
   "dependencies": {
     "localforage": "1.5.x",
     "localforage-sessionstoragewrapper": "1.2.x",

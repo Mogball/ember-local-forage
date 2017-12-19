@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import { storageFor } from 'ember-local-storage';
+import { storageFor } from 'ember-localforage';
 
 const {
   Route

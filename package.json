@@ -1,6 +1,6 @@
 {
-  "name": "ember-local-storage",
-  "version": "1.4.1",
+  "name": "ember-localforage",
+  "version": "1.5.2",
   "description": "The addon provides an ember-data adapter and a storageFor computed property that persists the changes to localStorage or sessionStorage.",
   "keywords": [
     "ember-addon",
@@ -21,7 +21,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/funkensturm/ember-local-storage.git",
+  "repository": "https://github.com/mogball/ember-localforage.git",
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
