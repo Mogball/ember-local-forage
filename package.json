@@ -1,6 +1,6 @@
 {
   "name": "ember-local-forage",
-  "version": "0.0.1",
+  "version": "1.5.0",
   "description": "This addon provides an ember-data adapter and storageFor computed property that persist data to localforage.",
   "keywords": [
     "ember-addon",
