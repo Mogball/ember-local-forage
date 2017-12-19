@@ -1,8 +1,8 @@
 # Ember localforage
 
-[![Build Status](https://api.travis-ci.org/funkensturm/ember-local-storage.svg?branch=master)](https://travis-ci.org/funkensturm/ember-local-storage)
-[![Ember Observer Score](http://emberobserver.com/badges/ember-local-storage.svg)](http://emberobserver.com/addons/ember-local-storage)
-[![Greenkeeper badge](https://badges.greenkeeper.io/funkensturm/ember-local-storage.svg)](https://greenkeeper.io/)
+[![Build Status](https://api.travis-ci.org/funkensturm/ember-localforage.svg?branch=master)](https://travis-ci.org/funkensturm/ember-localforage)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-localforage.svg)](http://emberobserver.com/addons/ember-localforage)
+[![Greenkeeper badge](https://badges.greenkeeper.io/funkensturm/ember-localforage.svg)](https://greenkeeper.io/)
 
 
 The addon provides a `storageFor` computed property that returns a proxy and persists the changes to localforage. It works with objects and arrays and has a generator to create the proxy objects or arrays. This addon is based off
@@ -24,9 +24,6 @@ The `storageFor` API was inspired by [Ember State Services](https://github.com/s
 See the [CHANGELOG](CHANGELOG.md)
 
 ## Usage
-
-The documentation is for versions `>= 1.0.0` if you are looking for older versions look [here](https://github.com/funkensturm/ember-local-storage/tree/v0.1.5#readme).
-
 If you upgrade from a version `<= 0.1.5` you need to set a `legacyKey` on the computed `storageFor`:
 ```javascript
 export default Ember.Component.extend({
@@ -59,7 +56,7 @@ ember g storage stats -s
 
 ```javascript
 // app/storages/stats.js
-import StorageObject from 'ember-local-storage/local/object';
+import StorageObject from 'ember-localforage/local/object';
 
 const Storage = StorageObject.extend();
 
@@ -75,7 +72,7 @@ export default Storage;
 ```javascript
 // app/controllers/application.js
 import Ember from 'ember';
-import { storageFor } from 'ember-local-storage';
+import { storageFor } from 'ember-localforage';
 
 export default Ember.Controller.extend({
   stats: storageFor('stats'),
@@ -114,7 +111,7 @@ ember g storage anonymous-likes -a -s
 
 ```javascript
 // app/storages/anonymous-likes.js
-import StorageArray from 'ember-local-storage/local/array';
+import StorageArray from 'ember-localforage/local/array';
 
 const Storage = StorageArray.extend();
 
@@ -131,7 +128,7 @@ export default Storage;
 ```javascript
 // app/components/like-item.js
 import Ember from 'ember';
-import { storageFor } from 'ember-local-storage';
+import { storageFor } from 'ember-localforage';
 
 export default Ember.Component.extend({
   anonymousLikes: storageFor('anonymous-likes'),
@@ -194,30 +191,30 @@ If your app is a pure LocalStorage app you just need to create the application a
 
 ```javascript
 // app/adapters/application.js
-export { default } from 'ember-local-storage/adapters/local';
-// or export { default } from 'ember-local-storage/adapters/session';
+export { default } from 'ember-localforage/adapters/local';
+// or export { default } from 'ember-localforage/adapters/session';
 
 // app/serializers/application.js
-export { default } from 'ember-local-storage/serializers/serializer';
+export { default } from 'ember-localforage/serializers/serializer';
 ```
 
 If you already use Ember Data for non LocalStorage models you can use a per type adapter and serializer.
 
 ```javascript
 // app/adapters/post.js
-export { default } from 'ember-local-storage/adapters/local';
-// or export { default } from 'ember-local-storage/adapters/session';
+export { default } from 'ember-localforage/adapters/local';
+// or export { default } from 'ember-localforage/adapters/session';
 
 // app/serializers/post.js
-export { default } from 'ember-local-storage/serializers/serializer';
+export { default } from 'ember-localforage/serializers/serializer';
 ```
 
 If you use namespaced models e.g. `blog/post` you have to add the `modelNamespace` property to the corresponding adapter:
 
 ```js
 // app/adapters/blog/post.js
-import Adapter from 'ember-local-storage/adapters/local';
-// or import Adapter from 'ember-local-storage/adapters/session';
+import Adapter from 'ember-localforage/adapters/local';
+// or import Adapter from 'ember-localforage/adapters/session';
 
 export default Adapter.extend({
   modelNamespace: 'blog'
@@ -326,7 +323,7 @@ You have to add `fileExport` option to the `environment.js`:
 // config/environment.js
 module.exports = function() {
   var ENV = {
-    'ember-local-storage': {
+    'ember-localforage': {
       fileExport: true
     }
   }

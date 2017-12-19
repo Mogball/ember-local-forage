@@ -4,11 +4,11 @@ import {
   storageDeepEqual
 } from '../helpers/storage';
 
-import StorageObject from 'ember-local-storage/local/object';
+import StorageObject from 'ember-localforage/local/object';
 import {
   storageFor,
   _resetStorages
-} from 'ember-local-storage/helpers/storage';
+} from 'ember-localforage/helpers/storage';
 
 const {
   get
