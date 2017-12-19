@@ -1,4 +1,4 @@
-import { storageFor } from 'ember-local-storage/helpers/storage';
+import { storageFor } from 'ember-localforage/helpers/storage';
 
 export {
   storageFor

@@ -45,7 +45,7 @@ module.exports = {
 
     var importStatement = [
       'import ' + baseClass,
-      ' from ' + '\'ember-local-storage/' + path +'\'',
+      ' from ' + '\'ember-localforage/' + path +'\'',
       ';'
     ].join('');
 
