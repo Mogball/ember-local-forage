@@ -1,11 +1,13 @@
-# Ember localStorage
+# Ember localforage
 
 [![Build Status](https://api.travis-ci.org/funkensturm/ember-local-storage.svg?branch=master)](https://travis-ci.org/funkensturm/ember-local-storage)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-local-storage.svg)](http://emberobserver.com/addons/ember-local-storage)
 [![Greenkeeper badge](https://badges.greenkeeper.io/funkensturm/ember-local-storage.svg)](https://greenkeeper.io/)
 
 
-The addon provides a `storageFor` computed property that returns a proxy and persists the changes to localStorage or sessionStorage. It works with objects and arrays and has a generator to create the proxy objects or arrays.
+The addon provides a `storageFor` computed property that returns a proxy and persists the changes to localforage. It works with objects and arrays and has a generator to create the proxy objects or arrays. This addon is based off
+[ember-local-storage](https://github.com/funkensturm/ember-local-storage) which persists to localStorage
+and sessionStorage.
 
 It ships with an ember-data adapter that works almost the same as the JSONAPIAdapter with some relationship sugar added.
 
@@ -15,7 +17,7 @@ The `storageFor` API was inspired by [Ember State Services](https://github.com/s
 
 ## Installation
 
-* `ember install ember-local-storage`
+* `ember install ember-localforage`
 
 ## Changelog
 
