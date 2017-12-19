@@ -1,7 +1,7 @@
 {
-  "name": "ember-local-storage",
-  "version": "1.4.1",
-  "description": "The addon provides an ember-data adapter and a storageFor computed property that persists the changes to localStorage or sessionStorage.",
+  "name": "ember-local-forage",
+  "version": "0.0.1",
+  "description": "This addon provides an ember-data adapter and storageFor computed property that persist data to localforage.",
   "keywords": [
     "ember-addon",
     "localStorage",
@@ -13,15 +13,19 @@
     "session-storage array",
     "session-storage object",
     "localStorage adapter",
-    "local-storage adapter"
+    "local-storage adapter",
+    "localforage",
+    "local-forage",
+    "localforage adapter",
+    "local-forage adpater"
   ],
   "license": "MIT",
-  "author": "Manuel Wiedenmann",
+  "author": "Jeff Niu",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/funkensturm/ember-local-storage.git",
+  "repository": "https://github.com/Mogball/ember-local-forage.git",
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
