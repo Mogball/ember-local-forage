@@ -1,6 +1,6 @@
 {
   "name": "ember-localforage",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "The addon provides an ember-data adapter and a storageFor computed property that persists the changes to localStorage or sessionStorage.",
   "keywords": [
     "ember-addon",
