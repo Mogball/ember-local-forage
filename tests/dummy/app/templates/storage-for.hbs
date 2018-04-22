@@ -29,7 +29,7 @@ Open the developer tools and go to <code>Resources</code> -> <code>Local Storage
 
 {{#highlight-js lang='js'}}
 // app/storages/settings.js
-import StorageObject from 'ember-localforage/local/object';
+import StorageObject from 'ember-local-storage/local/object';
 
 const Storage = StorageObject.extend();
 
@@ -47,7 +47,7 @@ export default Storage;
 {{#highlight-js lang='js'}}
 // app/controllers/application.js
 import Ember from 'ember';
-import { storageFor } from 'ember-localforage';
+import { storageFor } from 'ember-local-storage';
 
 export default Ember.Controller.extend({
   settings: storageFor('settings'),

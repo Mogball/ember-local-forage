@@ -1,5 +1,5 @@
 import DS from 'ember-data';
-import { importData, exportData } from 'ember-localforage/helpers/import-export';
+import { importData, exportData } from 'ember-local-storage/helpers/import-export';
 
 export function initialize() {
   if (!DS.Store.prototype._emberLocalStoragePatched) {

@@ -1,6 +1,6 @@
 {
-  "name": "ember-localforage",
-  "version": "1.5.8",
+  "name": "ember-local-storage",
+  "version": "1.4.1",
   "description": "The addon provides an ember-data adapter and a storageFor computed property that persists the changes to localforage",
   "keywords": [
     "ember-addon",
@@ -16,12 +16,12 @@
     "local-storage adapter"
   ],
   "license": "MIT",
-  "author": "Jeff Niu",
+  "author": "Manuel Wiedenmann",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/mogball/ember-localforage.git",
+  "repository": "https://github.com/funkensturm/ember-local-storage.git",
   "scripts": {
     "build": "ember build",
     "start": "ember serve",

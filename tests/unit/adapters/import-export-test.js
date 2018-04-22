@@ -1,8 +1,8 @@
 import Ember from 'ember';
 import { moduleForModel, test } from 'ember-qunit';
 import testData from '../../helpers/test-data';
-import { initialize } from 'ember-localforage/initializers/local-storage-adapter';
-import SessionStorageAdapter from 'ember-localforage/adapters/session';
+import { initialize } from 'ember-local-storage/initializers/local-storage-adapter';
+import SessionStorageAdapter from 'ember-local-storage/adapters/session';
 
 const {
   get,

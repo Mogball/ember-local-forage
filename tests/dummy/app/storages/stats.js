@@ -1,4 +1,4 @@
-import StorageObject from 'ember-localforage/local/object';
+import StorageObject from 'ember-local-storage/local/object';
 
 const Storage = StorageObject.extend();
 

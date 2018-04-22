@@ -5,11 +5,11 @@ import {
   storageDeepEqual
 } from '../helpers/storage';
 
-import StorageArray from 'ember-localforage/local/array';
+import StorageArray from 'ember-local-storage/local/array';
 import {
   storageFor,
   _resetStorages
-} from 'ember-localforage/helpers/storage';
+} from 'ember-local-storage/helpers/storage';
 
 let subject;
 

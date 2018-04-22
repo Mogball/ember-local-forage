@@ -23,7 +23,7 @@ module.exports = function(environment) {
       // when it is created
     },
 
-    'ember-localforage': {
+    'ember-local-storage': {
       fileExport: true,
       // ignoreBlobWarning: true,
     }
@@ -49,7 +49,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/ember-localforage'
+    ENV.rootURL = '/ember-local-storage'
     ENV.locationType = 'hash';
   }
 

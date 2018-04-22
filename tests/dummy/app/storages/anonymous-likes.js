@@ -1,3 +1,3 @@
-import StorageArray from 'ember-localforage/local/array';
+import StorageArray from 'ember-local-storage/local/array';
 
 export default StorageArray.extend();
