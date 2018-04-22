@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import { storageFor } from 'ember-local-storage/helpers/storage';
+import { storageFor } from 'ember-localforage/helpers/storage';
 
 export default Ember.Controller.extend({
   stats: storageFor('stats'),

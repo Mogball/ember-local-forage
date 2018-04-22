@@ -4,12 +4,12 @@ import {
   storageDeepEqual
 } from '../helpers/storage';
 
-import StorageObject from 'ember-local-storage/local/object';
-import SessionStorageObject from 'ember-local-storage/session/object';
+import StorageObject from 'ember-localforage/local/object';
+import SessionStorageObject from 'ember-localforage/session/object';
 import {
   storageFor,
   _resetStorages
-} from 'ember-local-storage/helpers/storage';
+} from 'ember-localforage/helpers/storage';
 
 let subject;
 

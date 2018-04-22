@@ -8,7 +8,7 @@ const Funnel = require('broccoli-funnel');
 const mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
-  name: 'ember-local-storage',
+  name: 'ember-localforage',
 
   _warn(message) {
     let chalk = require('chalk');
@@ -55,7 +55,7 @@ module.exports = {
     let options = {};
 
     if (projectConfig) {
-      options = projectConfig['ember-local-storage'] || {};
+      options = projectConfig['ember-localforage'] || {};
 
       if (options.fileExport && this.hasEmberData) {
         this.needsFileExport = true;
@@ -71,7 +71,7 @@ module.exports = {
                    'Ember localStorage 1.4.0 the `blob-polyfill` NPM ' +
                    'package is a dependency. If other code depends on the ' +
                    'bower package add `ignoreBlobWarning: true` to ' +
-                   '`ember-local-storage` config in `environment.js` to ' +
+                   '`ember-localforage` config in `environment.js` to ' +
                    'ignore this warning.'
                   );
       }
@@ -83,8 +83,9 @@ module.exports = {
       app.import('vendor/save-as.js');
       app.import('vendor/Blob.js');
     }
-    app.import(app.bowerDirectory + '/localforage/dist/localforage.min.js');
-    app.import(app.bowerDirectory + '/localforage-sessionstoragewrapper/src/localforage-sessionstoragewrapper.js')
+
+    app.import('node_modules/localforage/dist/localforage.min.js');
+    app.import('node_modules/localforage-sessionstoragewrapper/src/localforage-sessionstoragewrapper.js');
 
     this._super.included.apply(this, arguments);
   },
