@@ -2670,6 +2670,12 @@ ember-cli@~2.17.0:
     walk-sync "^0.3.0"
     yam "0.0.22"
 
+ember-copy@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory.global.standardchartered.com/artifactory/api/npm/npm-release/ember-copy/-/ember-copy-1.0.0.tgz#426554ba6cf65920f31d24d0a3ca2cb1be16e4aa"
+  dependencies:
+    ember-cli-babel "^6.6.0"
+
 ember-data@^2.17.0:
   version "2.18.2"
   resolved "https://registry.yarnpkg.com/ember-data/-/ember-data-2.18.2.tgz#3c6e99c9aed77ef8945451c39f39865f370f3db4"
