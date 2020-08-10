@@ -24,6 +24,7 @@
   "repository": "https://github.com/bullet-db/ember-localforage.git",
   "scripts": {
     "build": "ember build",
+    "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
     "start": "ember serve",
     "test": "ember try:each"
   },
@@ -36,13 +37,14 @@
     "ember-cli-babel": "^6.6.0",
     "ember-cli-string-utils": "^1.1.0",
     "ember-cli-version-checker": "^2.1.0",
+    "ember-copy": "^1.0.0",
     "localforage": "~1.7.1",
     "localforage-sessionstoragewrapper": "~1.2.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.5.0",
     "ember-ajax": "^3.0.0",
-    "ember-cli": "~2.17.0",
+    "ember-cli": "~2.18.2",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.1",
     "ember-cli-github-pages": "^0.1.2",
@@ -56,14 +58,16 @@
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
-    "ember-copy": "^1.0.0",
-    "ember-data": "^2.17.0",
+    "ember-data": "~2.18.0",
     "ember-disable-prototype-extensions": "^1.1.2",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
     "ember-one-way-controls": "^3.0.1",
     "ember-resolver": "^4.1.0",
-    "ember-source": "~2.17.0",
+    "ember-source": "~2.18.0",
+    "eslint-plugin-ember": "^5.0.0",
+    "eslint-plugin-node": "^5.2.1",
+    "highlightjs": "^9.10.0",
     "loader.js": "^4.4.0",
     "test": "^0.6.0"
   },
