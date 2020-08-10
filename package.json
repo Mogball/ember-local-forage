@@ -21,7 +21,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/mogball/ember-localforage.git",
+  "repository": "https://github.com/bullet-db/ember-localforage.git",
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
@@ -36,6 +36,7 @@
     "ember-cli-babel": "^6.6.0",
     "ember-cli-string-utils": "^1.1.0",
     "ember-cli-version-checker": "^2.1.0",
+    "ember-copy": "^1.0.0",
     "localforage": "~1.7.1",
     "localforage-sessionstoragewrapper": "~1.2.0"
   },
@@ -49,7 +50,7 @@
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.6.1",
-    "ember-cli-inuitcss": "^1.0.1",
+    "ember-cli-inuitcss": "^1.0.2",
     "ember-cli-qunit": "^4.1.1",
     "ember-cli-release": "^1.0.0-beta.2",
     "ember-cli-sass": "^7.1.1",

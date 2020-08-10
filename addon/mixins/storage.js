@@ -1,12 +1,12 @@
 import Ember from 'ember';
 import { getStorage } from '../helpers/storage';
+import { copy } from 'ember-copy';
 import { preSerialize } from '../helpers/utils';
 
 const {
   Mixin,
   get,
   set,
-  copy,
   isArray
 } = Ember;
 
