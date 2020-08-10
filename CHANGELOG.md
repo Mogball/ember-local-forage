@@ -1,16 +1,7 @@
 # Changelog
 
-
-## 1.5.0
-* [ENHANCEMENT] Provide `resetStorages` test helper. Thanks to [@dmuneras](https://github.com/dmuneras) for the PR.
-* [FIX] Fix test coverage. Thanks to [@CvX](https://github.com/CvX) for the PR.
-
-## 1.4.2
-* [FIX] Remove copy deprecation warnings. Thanks to [@selvaa89](https://github.com/selvaa89) for the PR.
-* [FIX] Fix broken `autoSave` option for ember-data versions > 3.0.X.
-
 ## 1.4.1
-* [FIX] Remove singularize + pluralize deprecation warnings. Thanks to [@eharrow](https://github.com/eharrow) and [@CvX](https://github.com/CvX) for the PRs.
+* [FIX]  Remove singularize + pluralize deprecation warnings. Thanks to [@eharrow](https://github.com/eharrow) and [@CvX](https://github.com/CvX) for the PRs.
 
 ## 1.4.0
 * [FIX] Namespaces storage based on type key if `storageFor`s `model` option is used. Thanks to [@offirgolan](https://github.com/offirgolan) for the PR.
@@ -112,5 +103,5 @@
 * [ENHANCEMENT] `sessionStorage` added
 * [ENHANCEMENT] Usage of `localStorageKey` is deprecated use `storageKey` instead.
 * [BREAKING] localStorage array and object location changed
-  * `ember-local-storage/object` -> `ember-local-storage/local/object`
-  * `ember-local-storage/array` -> `ember-local-storage/local/array`
+	* `ember-local-storage/object` -> `ember-local-storage/local/object`
+	* `ember-local-storage/array` -> `ember-local-storage/local/array`

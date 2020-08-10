@@ -19,7 +19,7 @@ module.exports = {
     } else if (this.ui) {
       this.ui.writeLine(warning);
     } else {
-      console.log(warning); // eslint-disable-line no-console
+      console.log(warning);
     }
   },
 
